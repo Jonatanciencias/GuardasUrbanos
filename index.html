@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardas Urbanos</title> <!--aqui va lo que aparece en la pestaña-->
+    <link rel="StyleSheet" href="style.css" type="text/css">
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">
+                IE Concejo Municipal el Porvenir <!-- simplemente un subtitulo h2-->
+            </h2>
+            <div class="toggle">
+
+            </div>
+        </header>
+        <video src="media/Explore.mp4" muted loop autoplay></video> <!--Video en bucle y que se auto inicia-->
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Guardas Urbanos</h2> 
+            <h3>Club cientifico Estudiantil</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente cum ipsam, quisquam maiores repellendus fugit repudiandae facere tempore id natus!</p>
+            <a href="#">Proyectos</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="#"><img src="media/facebook.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="media/twitter.png" alt="twitter"></a></li>
+            <li><a href="#"><img src="Media/instagram.png" alt="instagram"></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Fototeca</a></li>
+            <li><a href="#">Proyectos</a></li>
+        </ul>
+    </div>
+
+    <script>
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+
+    menuToggle.addEventListener('click', () => {    
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+})
+
+    </script>
+</body>
+</html>
